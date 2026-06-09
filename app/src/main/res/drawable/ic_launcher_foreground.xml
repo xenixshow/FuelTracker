@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Fuel pump icon -->
+    <group
+        android:translateX="24"
+        android:translateY="24">
+        <!-- Nozzle -->
+        <path
+            android:fillColor="#4CAF50"
+            android:pathData="M40,15 L40,45 C40,48.3 37.3,51 34,51 L26,51 C22.7,51 20,48.3 20,45 L20,15 C20,11.7 22.7,9 26,9 L34,9 C37.3,9 40,11.7 40,15 Z" />
+        <!-- Pump body -->
+        <path
+            android:fillColor="#388E3C"
+            android:pathData="M12,9 L12,51 L18,51 L18,9 Z" />
+        <!-- Hose -->
+        <path
+            android:fillColor="#757575"
+            android:pathData="M40,25 L50,25 L50,31 L40,31 Z" />
+        <!-- Display -->
+        <rect
+            android:fillColor="#BBDEFB"
+            android:width="12dp"
+            android:height="8dp"
+            android:x="24dp"
+            android:y="16dp" />
+    </group>
+</vector>

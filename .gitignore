@@ -1,0 +1,30 @@
+# ── Android ──
+*.iml
+.gradle/
+/local.properties
+/.idea/
+*.apk
+*.aab
+*.dex
+*.class
+*.log
+/build/
+/app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# ── Keystore（密钥，绝对不能提交）──
+*.jks
+keystore.properties
+
+# ── 已移除的云同步模块 ──
+/app/src/main/java/com/fuelapp/network/
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── Python/临时文件 ──
+__pycache__/
+*.pyc

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">油耗记录</string>
+    <string name="add_record">添加记录</string>
+    <string name="history">历史记录</string>
+    <string name="statistics">统计图表</string>
+    <string name="mileage">里程数 (km)</string>
+    <string name="fuel_volume">加油量 (升)</string>
+    <string name="fuel_price">油价 (元/升)</string>
+    <string name="total_cost">加油费用 (元)</string>
+    <string name="date">日期</string>
+    <string name="notes">备注</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+    <string name="confirm_delete">确认删除</string>
+    <string name="cancel">取消</string>
+    <string name="no_records">暂无记录</string>
+    <string name="fuel_consumption">油耗 (L/100km)</string>
+    <string name="cost_per_km">每公里费用 (元/km)</string>
+    <string name="monthly_stats">月度统计</string>
+    <string name="avg_fuel_price">平均油价</string>
+    <string name="input_hint_mileage">请输入当前里程数</string>
+    <string name="input_hint_volume">请输入加油量</string>
+    <string name="input_hint_price">请输入油价</string>
+    <string name="input_hint_cost">请输入总费用</string>
+    <string name="input_hint_notes">备注信息（可选）</string>
+    <string name="sync">云同步</string>
+    <string name="export_success">导出成功</string>
+    <string name="import_success">导入成功</string>
+</resources>

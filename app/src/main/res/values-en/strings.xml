@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fuel Tracker</string>
+    <string name="add_record">Add Record</string>
+    <string name="history">History</string>
+    <string name="statistics">Statistics</string>
+    <string name="sync">Cloud Sync</string>
+    <string name="mileage">Mileage (km)</string>
+    <string name="fuel_volume">Fuel Volume (L)</string>
+    <string name="fuel_price">Fuel Price (¥/L)</string>
+    <string name="total_cost">Total Cost (¥)</string>
+    <string name="date">Date</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="confirm_delete">Confirm Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_records">No records yet</string>
+    <string name="fuel_consumption">Fuel Consumption (L/100km)</string>
+    <string name="cost_per_km">Cost per km (¥/km)</string>
+    <string name="monthly_stats">Monthly Stats</string>
+    <string name="avg_fuel_price">Avg Fuel Price</string>
+    <string name="export_success">Export successful</string>
+    <string name="import_success">Import successful</string>
+    <string name="input_hint_mileage">Enter current odometer reading</string>
+    <string name="input_hint_volume">Enter fuel volume</string>
+    <string name="input_hint_price">Enter fuel price</string>
+    <string name="input_hint_cost">Enter total cost</string>
+    <string name="input_hint_notes">Notes (optional)</string>
+</resources>
