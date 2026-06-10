@@ -4,12 +4,14 @@
 
   <table>
     <tr>
-      <td><img src="screenshots/screenshot_add.svg" width="200" alt="添加记录"/></td>
-      <td><img src="screenshots/screenshot_stats.svg" width="200" alt="统计图表"/></td>
+      <td><img src="screenshots/screenshot_add.png" width="200" alt="添加记录"/></td>
+      <td><img src="screenshots/screenshot_stats.png" width="200" alt="统计图表"/></td>
+      <td><img src="screenshots/screenshot_history.png" width="200" alt="历史记录"/></td>
     </tr>
     <tr>
       <td align="center"><b>添加记录</b></td>
       <td align="center"><b>统计图表</b></td>
+      <td align="center"><b>历史记录</b></td>
     </tr>
   </table>
 </div>
