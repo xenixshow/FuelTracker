@@ -72,15 +72,6 @@ app/src/main/java/com/fuelapp/
 ./gradlew assembleRelease
 ```
 
-## 📸 更换截图
-
-`screenshots/` 目录下的 SVG 文件是占位图。用真机截图替换：
-
-1. 在 APP 里截图三个主要页面
-2. 命名为 `screenshot_add.png`、`screenshot_stats.png`、`screenshot_history.png`
-3. 放到 `screenshots/` 目录
-4. 更新 README 中的图片引用
-
 ## 📄 隐私政策
 
 本应用**不上传任何数据**到服务器，所有数据仅保存在本地设备 SQLite 数据库中。
