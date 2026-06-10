@@ -1,6 +1,17 @@
 <div align="center">
   <h1>⛽ 油耗记录 · Fuel Tracker</h1>
   <p>Android 平台油耗管理应用 · Kotlin + Jetpack Compose</p>
+
+  <table>
+    <tr>
+      <td><img src="screenshots/screenshot_add.svg" width="200" alt="添加记录"/></td>
+      <td><img src="screenshots/screenshot_stats.svg" width="200" alt="统计图表"/></td>
+    </tr>
+    <tr>
+      <td align="center"><b>添加记录</b></td>
+      <td align="center"><b>统计图表</b></td>
+    </tr>
+  </table>
 </div>
 
 ## 📱 功能
@@ -46,7 +57,6 @@ app/src/main/java/com/fuelapp/
 │   ├── navigation/       导航
 │   │   └── NavGraph.kt
 │   └── theme/            Material 3 主题
-├── network/              （已移除云同步）
 └── MainActivity.kt      入口
 ```
 
@@ -62,6 +72,15 @@ app/src/main/java/com/fuelapp/
 # Release APK（侧载安装）
 ./gradlew assembleRelease
 ```
+
+## 📸 更换截图
+
+`screenshots/` 目录下的 SVG 文件是占位图。用真机截图替换：
+
+1. 在 APP 里截图三个主要页面
+2. 命名为 `screenshot_add.png`、`screenshot_stats.png`、`screenshot_history.png`
+3. 放到 `screenshots/` 目录
+4. 更新 README 中的图片引用
 
 ## 📄 隐私政策
 

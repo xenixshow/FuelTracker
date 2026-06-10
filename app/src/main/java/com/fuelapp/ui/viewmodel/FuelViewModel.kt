@@ -179,7 +179,12 @@ class FuelViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun checkMileageGap(currentMileage: Double) {
-        val last = lastRecordInfo ?: return
+        val last = lastRecordInfo
+        if (last == null) {
+            // 还没加载上次记录，触发加载，等下次输入再判断
+            checkLastRecord()
+            return
+        }
         if (currentMileage <= last.mileage) return
         val kmDiff = currentMileage - last.mileage
         if (kmDiff > currentMaxRange) showMissedReminder = true

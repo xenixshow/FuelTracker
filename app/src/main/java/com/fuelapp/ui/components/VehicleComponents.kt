@@ -115,13 +115,11 @@ fun VehicleManageDialog(
                                             style = MaterialTheme.typography.labelSmall,
                                             color = MaterialTheme.colorScheme.outline)
                                     }
-                                    if (vehicles.size > 1 && v.id != 1L) {
-                                        IconButton(onClick = { vehicleToDelete = v }) {
+                                    IconButton(onClick = { vehicleToDelete = v }) {
                                             Icon(Icons.Default.Delete, contentDescription = "删除",
                                                 tint = MaterialTheme.colorScheme.error,
                                                 modifier = Modifier.size(20.dp))
                                         }
-                                    }
                                 }
                             }
                         }
@@ -154,20 +152,35 @@ fun VehicleManageDialog(
 
     // 删除确认
     vehicleToDelete?.let { v ->
-        AlertDialog(
-            onDismissRequest = { vehicleToDelete = null },
-            title = { Text("删除车辆") },
-            text = { Text("确定删除「${v.name}」吗？该车辆的所有加油记录也会被删除。") },
-            confirmButton = {
+    val isLastVehicle = vehicles.size <= 1
+    AlertDialog(
+        onDismissRequest = { vehicleToDelete = null },
+        title = { Text("删除车辆") },
+        text = {
+            if (isLastVehicle) {
+                Text("「${v.name}」是最后一辆车，无法删除。请先添加其他车辆。")
+            } else {
+                Text("确定删除「${v.name}」吗？该车辆的所有加油记录也会被删除。")
+            }
+        },
+        confirmButton = {
+            if (isLastVehicle) {
+                TextButton(onClick = { vehicleToDelete = null }) { Text("知道了") }
+            } else {
                 Button(onClick = {
                     viewModel.deleteVehicle(v.id)
                     vehicleToDelete = null
                 }, colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)) {
                     Text("删除")
                 }
-            },
-            dismissButton = { TextButton(onClick = { vehicleToDelete = null }) { Text("取消") } }
-        )
+            }
+        },
+        dismissButton = {
+            if (!isLastVehicle) {
+                TextButton(onClick = { vehicleToDelete = null }) { Text("取消") }
+            }
+        }
+    )
     }
 }
 
