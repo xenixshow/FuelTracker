@@ -68,10 +68,7 @@ app/src/main/java/com/fuelapp/
 # Debug APK
 ./gradlew assembleDebug
 
-# Release AAB（上架 Google Play）
-./gradlew bundleRelease
-
-# Release APK（侧载安装）
+# Release APK（下载安装）
 ./gradlew assembleRelease
 ```
 
